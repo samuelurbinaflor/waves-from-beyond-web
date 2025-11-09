@@ -2,7 +2,7 @@
   "name": "prueba",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://samuelurbinaflor.github.io/prueba",
+  "homepage": "https://samuelurbinaflor.github.io/waves-from-beyond-web",
   "type": "module",
   "scripts": {
     "dev": "vite",
