@@ -1,7 +1,7 @@
 import React from "react";
 import itchiologo from "../../assets/icons/Itch Io.png";
 
-export default function SecondSprint() {
+export default function ThirdSprint() {
   return (
     <div id="newspaper">
       <header>
@@ -12,7 +12,7 @@ export default function SecondSprint() {
 
         <h1>
           <hr />
-          SECOND SPRINT DEVLOG
+          THIRD SPRINT DEVLOG
           <hr />
         </h1>
       </header>

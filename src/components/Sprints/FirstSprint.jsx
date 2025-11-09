@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/newspaper.css";
+import itchiologo from "../../assets/icons/Itch Io.png";
 
 export default function FirstSprint() {
   return (
@@ -7,76 +7,83 @@ export default function FirstSprint() {
       <header>
         <p>
           <span>Êttudio Pitijopo</span>
-          <span> Miércoles 5 de Noviembre 2025</span>
+          <span> Nov/09/2025</span>
         </p>
-        <h1>FIRST SPRINT DEVLOG</h1>
+
+        <h1>
+          <hr />
+          FIRST SPRINT DEVLOG
+          <hr />
+        </h1>
       </header>
+      <br />
+      <div className="intro">
+        <p>
+          Hi there! We're excited to share our first devlog where we'll talk
+          about the current state of our game project for Game Off 2025 (with
+          the theme “waves”). After our first brainstorming session, we
+          discussed several ideas and finally came up with something that really
+          clicked for us.
+        </p>
+        <br />
+        <p>
+          Our lead designer developed an idea for a psychological horror game
+          where the player must make decisions based on instructions received
+          via radio. After several discussions about the setting, we decided the
+          story would take place in a forest *(watchtower / fire lookout)*,
+          starring a park ranger. Our artist began working on the initial
+          concept art and the rest of us started with the development.
+        </p>
+      </div>
 
+      <div id="col">
+        <article>
+          <h2>TOOLS</h2>
+          <p>
+            We are developing the project in Godot, using Blender and Procreate
+            for 3D and 2D modeling and asset design. We use GitHub Projects for
+            project management and organization. Finally, we communicate via
+            WhatsApp and Discord.
+          </p>
+        </article>
+
+        <article>
+          <h2>FIRST STEPS</h2>
+          <p>
+            During this first week of production, our developers designed a
+            prototype with the main mechanics of the playable hub (rotating
+            through the hub and zooming into items).
+          </p>
+          <p>
+            Our 3D artist modeled the main hub and the gameplay tools following
+            the 2D artist concept art.
+          </p>
+        </article>
+      </div>
       <article>
-        <h2>Objetivos del Sprint</h2>
-        <p>Durante esta semana, el equipo se ha centrado en:</p>
-        <ul>
-          <li>Implementación del sistema de combate básico.</li>
-          <li>Diseño y animación del jefe final del nivel 1.</li>
-          <li>Corrección de errores en el motor de físicas de colisiones.</li>
-          <li>Optimización de la carga de texturas y sprites.</li>
-        </ul>
+        <h2>ART AND DESIGN</h2>
+        <p>
+          Our artists, along with the design team, got to work on the cabin
+          where our main character is. As mentioned before, Waves From Beyond
+          tells the story of a park ranger who must guide a person to escape a
+          serial killer using the clues provided by the spirits of the previous
+          victims over the radio.
+        </p>
       </article>
 
       <article>
-        <h2>Logros Destacados</h2>
-        <p>¡Buenas noticias! Se han alcanzado los siguientes hitos:</p>
-        <ul>
-          <li>
-            El <span class="highlight">jefe final</span> ya se mueve y ataca
-            según patrón definido.
-          </li>
-          <li>
-            El <span class="highlight">sistema de partículas</span> para
-            hechizos y explosiones está integrado.
-          </li>
-          <li>
-            Se han reducido los <span class="highlight">tiempos de carga</span>{" "}
-            un 30% gracias a la optimización de sprites.
-          </li>
-        </ul>
+        <h2>WHAT’S NEXT?</h2>
+        <p>
+          For this second week, we are planning to introduce character dialogues
+          and player decision-making. We are also working on ambient sound. We
+          are very excited about the project and how it is gradually taking
+          shape, and we look forward to sharing more progress with you. See you
+          in the next devlog :)"
+        </p>
       </article>
-
-      <article>
-        <h2>Retos y Obstáculos</h2>
-        <p>El equipo ha encontrado algunos contratiempos:</p>
-        <ul>
-          <li>
-            El enemigo “Slime Gigante” se queda atascado en esquinas del mapa.
-          </li>
-          <li>
-            El menú de inventario sufre de problemas de escalado en resoluciones
-            menores a 720p.
-          </li>
-          <li>
-            El sistema de guardado rápido aún necesita ajustes para no perder
-            progreso.
-          </li>
-        </ul>
-      </article>
-
-      <article>
-        <h2>🔮 Próximos Pasos</h2>
-        <p>Para el siguiente sprint, planeamos:</p>
-        <ul>
-          <li>Resolver los bugs pendientes del nivel 1.</li>
-          <li>Crear animaciones de victoria y derrota para el jugador.</li>
-          <li>
-            Comenzar el diseño del nivel 2 con temática de bosque encantado.
-          </li>
-          <li>
-            Probar la integración de música y efectos de sonido dinámicos.
-          </li>
-        </ul>
-      </article>
-
       <footer>
-        PixelQuest Studios - Mantente al día con nuestros avances semanales.
+        <p>Êttudio Pitijopo</p>
+        <img src={itchiologo} alt="" />
       </footer>
     </div>
   );

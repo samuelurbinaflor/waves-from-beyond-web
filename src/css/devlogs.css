@@ -1,7 +1,7 @@
 #devlogs {
-   background-color: white;
+   background-color: rgb(202, 166, 166);
    width: 100%;
-   height: 60%;
+   height: 48%;
    overflow: hidden;
    color: #181818;
  }
@@ -54,18 +54,14 @@
 #sprints {
   display: flex;
   flex-direction: column;
-  gap: 50px
-  ;
+  height: 100%;
+  justify-content: space-between;
 }
 #sprints > div {
-  height: 200px;
+  height: 20vh;
   overflow: hidden;
 }
-
-@media (max-width: 700px) {
-  .modal-window {
-    width: 100%;
-    height: 90%;
-    top: 45%;
-  }
+#devlogs_body {
+  padding: 0 !important;
+  margin-bottom: 70px;
 }

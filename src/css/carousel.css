@@ -3,7 +3,7 @@
   background-color: #fff;
   width: 100%;
   padding: 0;
-  height: 35%;
+  height: 48%;
 }
 
 .carousel {
@@ -48,9 +48,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
-  max-height: 85vh;
-  background-color: #fff;
+  background-color: #473f3f;
   border-radius: 12px;
   z-index: 1001;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
@@ -58,14 +56,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 
 /* Imagen grande */
 .carousel-modal-window img {
-  width: 100%;
-  height: auto;
   display: block;
-  object-fit: contain;
+  max-width: 70%;
 }
 
 /* Controles */
@@ -88,3 +85,9 @@
   transition: background-color 0.2s;
 }
 
+#gallery > div {
+  margin-bottom: 30px;
+}
+#gallery > img {
+  max-width: 100%;
+}

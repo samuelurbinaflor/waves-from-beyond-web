@@ -30,8 +30,9 @@
    
    #mobile-display {overflow-y: scroll;}
    #mobile-display > div { padding: 30px 30px 100px 30px;}
+   .modal-window { width: 100%; height: 100%; top: 50%; margin-bottom: 70px;}
 
-   
+   #menu { display: flex; }
    #wfb { gap: 10px; }
    #logowfb { min-width: 100% ; max-width: none; margin: 0 auto !important;}
    #devlogs { max-height: none; height: 90vh; }
@@ -50,7 +51,6 @@
    #main, #sidebar { padding: 30px; }
    #wfb { font-size: 20px; }
    #logowfb { max-width: 100%; }
-   #sidebar img { width: 80%; }
    #rss { width: 100%; }
  }
  

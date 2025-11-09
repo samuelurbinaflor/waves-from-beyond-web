@@ -1,63 +1,78 @@
-import React from 'react';
+import React from "react";
+import "../css/team.css";
+import itchiologo from "../assets/icons/Itch Io.png";
 
 export default function TeamModal({ open, onClose }) {
   if (!open) return null;
 
   return (
     <>
-      {/* Fondo borroso */}
+      {/* Blurry backdrop */}
       <div className="modal-backdrop" onClick={onClose} />
-     
-      {/* Ventana modal */}
+
+      {/* Modal window */}
       <div className="modal-window">
-        <div id='teampage'>
-        <button 
-          className="modal-close-button" 
-          onClick={onClose}
-          aria-label="Cerrar"
-        >
-          ✖
-        </button>
+        <div id="teampage">
           <header>
-            <h1>Meet Our Team - Êttudio Pitijopo</h1>
-            <p>Conoce a las personas detrás de nuestro proyecto indie.</p>
+            <div>
+              <h1>Meet Our Team</h1>
+              <button className="modal-close-button" onClick={onClose} aria-label="Close">✖</button>
+            </div>
+            <p>Get to know the people behind our project.</p>
           </header>
 
           <article>
             <h2>Lara Narváez Otero</h2>
-            <p>Producción y diseño</p>
+            <h3>Production & Design</h3>
+            <p>
+              Lara coordinates the team and ensures every part of the game stays cohesive and purposeful. She blends her programming background with creative vision to bring ideas to life.
+            </p>
           </article>
 
           <article>
             <h2>Alberto Aranda Cano</h2>
-            <p>Dirección de diseño</p>
+            <h3>Design Director</h3>
+            <p>
+              Alberto leads the design vision, creating engaging gameplay mechanics and guiding the team to make sure the game feels polished and intuitive.
+            </p>
           </article>
 
           <article>
             <h2>Sergio Morales Coronil</h2>
-            <p>Programación</p>
+            <h3>Programming</h3>
+            <p>
+              Sergio is our coding wizard, implementing core systems, debugging complex issues, and making sure the game runs smoothly on all platforms.
+            </p>
           </article>
 
           <article>
             <h2>Samuel Urbina Flor</h2>
-            <p>Programación, audio y desarrollo web</p>
+            <h3>Programming, Audio & Web Development</h3>
+            <p>
+              Samuel handles gameplay programming, sound design, and maintains our web presence. His work ensures immersive experiences both in-game and online.
+            </p>
           </article>
-
 
           <article>
             <h2>Ángela Amate Jiménez</h2>
-            <p>Arte 2D</p>
+            <h3>2D Art</h3>
+            <p>
+              Ángela creates stunning 2D assets and illustrations, adding personality and style to our characters and environments.
+            </p>
           </article>
-
 
           <article>
             <h2>Lucía López Rodríguez</h2>
-            <p>Arte y modelado 3D</p>
+            <h3>3D Art & Modeling</h3>
+            <p>
+              Lucía brings the world to life in 3D, modeling characters, objects, and environments with attention to detail and realism.
+            </p>
           </article>
 
-          <footer>
-            Êttudio Pitijopo - Gracias por seguir nuestro trabajo.
-          </footer>
+           <footer>
+                 <p>Êttudio Pitijopo</p>
+                 <img src={itchiologo} alt="" />
+               </footer>
         </div>
       </div>
     </>

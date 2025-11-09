@@ -3,49 +3,64 @@
 #newspaper {
    background-color: #fff;
    padding: 40px;
+   padding-bottom: 0;
    font-family: 'IBM Plex Serif', serif;
    height: 100%;
    color: black;
 }
 
-header>p {
-   border-bottom: 1px solid black;
+#newspaper header > p {
    display: flex;
    justify-content: space-between;
 }
 
-
-header {
+#newspaper header {
    text-align: center;
    padding: 1rem;
    padding: 0;
 }
 
-h1 {
+#newspaper h1 {
    margin: 0;
-   font-size: 2rem;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+   padding: 10px 0;
 }
 
-h2 {
-   border-bottom: 2px solid #222;
+#newspaper h2 {
    padding-bottom: 0.3rem;
-   margin-top: 2rem;
    font-size: 1.5rem;
+   justify-self: center;
 }
 
-article {
+#newspaper article {
    padding: 1rem 0;
-   border-bottom: 1px solid #ccc;
+   border-bottom: 1px solid gray;
+   margin-bottom: 10px;
 }
 
-.highlight {
-   color: #c00;
-   font-weight: bold;
-}
 
-footer {
+#newspaper footer {
    text-align: center;
    padding: 1rem;
    font-size: 0.9rem;
    color: #666;
+}
+.intro {
+   margin-bottom: 20px;
+   padding: 20px;
+   border-bottom: 1px solid black;
+
+}
+@media (min-width: 950px){
+   #col {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+
+   }
+   #col article {
+      width: 48%;
+   }
 }
