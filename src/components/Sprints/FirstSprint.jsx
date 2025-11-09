@@ -1,18 +1,19 @@
 import React from "react";
-
+import "../../css/newspaper.css";
 
 export default function FirstSprint() {
   return (
-    <div id='newspaper'>
+    <div id="newspaper">
       <header>
-        <h1>Boletín del Sprint - PixelQuest Studios</h1>
         <p>
-          Edición Semana 5 - ¡Novedades frescas del desarrollo de nuestro juego!
+          <span>Êttudio Pitijopo</span>
+          <span> Miércoles 5 de Noviembre 2025</span>
         </p>
+        <h1>FIRST SPRINT DEVLOG</h1>
       </header>
 
       <article>
-        <h2>🎮 Objetivos del Sprint</h2>
+        <h2>Objetivos del Sprint</h2>
         <p>Durante esta semana, el equipo se ha centrado en:</p>
         <ul>
           <li>Implementación del sistema de combate básico.</li>
@@ -23,7 +24,7 @@ export default function FirstSprint() {
       </article>
 
       <article>
-        <h2>🛠 Logros Destacados</h2>
+        <h2>Logros Destacados</h2>
         <p>¡Buenas noticias! Se han alcanzado los siguientes hitos:</p>
         <ul>
           <li>
@@ -42,7 +43,7 @@ export default function FirstSprint() {
       </article>
 
       <article>
-        <h2>🐞 Retos y Obstáculos</h2>
+        <h2>Retos y Obstáculos</h2>
         <p>El equipo ha encontrado algunos contratiempos:</p>
         <ul>
           <li>

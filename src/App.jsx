@@ -16,6 +16,7 @@ import Menu from "./components/Menu.jsx";
 
 function App() {
   const [devLogsOpen, setDevLogsOpen] = useState(false);
+  const [selectedSprint, setSelectedSprint] = useState(null); // 👈 nuevo estado
   const [currentPage, setCurrentPage] = useState("wfb");
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
 
@@ -24,6 +25,12 @@ function App() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  // función para abrir modal con sprint específico
+  const handleOpenDevlog = (sprint) => {
+    setSelectedSprint(sprint);
+    setDevLogsOpen(true);
+  };
 
   return (
     <div id="body">
@@ -34,7 +41,7 @@ function App() {
             <WFB />
             <div id="extra">
               <div id="devlogs">
-                <DevLogs onOpen={() => setDevLogsOpen(true)} />
+                <DevLogs onOpen={handleOpenDevlog} />
               </div>
               <Carousel />
             </div>
@@ -42,11 +49,11 @@ function App() {
           <Sidebar />
         </>
       ) : (
-        // Mobile layout: una pantalla a la vez
+        // Mobile layout
         <div id="mobile-display">
           {currentPage === "wfb" && <WFB />}
           {currentPage === "devlogs" && (
-            <DevLogs onOpen={() => setDevLogsOpen(true)} />
+            <DevLogs onOpen={handleOpenDevlog} />
           )}
           {currentPage === "carousel" && <Carousel />}
           {currentPage === "sidebar" && <Sidebar />}
@@ -56,8 +63,12 @@ function App() {
       {/* Menú solo visible en móvil */}
       {isMobile && <Menu setCurrentPage={setCurrentPage} />}
 
-      {/* Modal siempre disponible */}
-      <DevLogsModal open={devLogsOpen} onClose={() => setDevLogsOpen(false)} />
+      {/* Modal */}
+      <DevLogsModal
+        open={devLogsOpen}
+        sprint={selectedSprint} // 👈 pasamos cuál sprint abrir
+        onClose={() => setDevLogsOpen(false)}
+      />
     </div>
   );
 }
