@@ -1,0 +1,29 @@
+#body {
+   font-weight: normal;
+   display: flex;
+   flex-direction: row;
+   height: 100vh;
+   width: 100vw;
+   text-align: justify;
+   overflow: hidden;
+   font-family: "IM Fell English", serif;
+ }
+ 
+ #main {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: 100vh;
+   background-color: #222222;
+   flex: 6;
+   padding: 50px 80px;
+   gap: 50px;
+ }
+ 
+ #extra {
+   flex: 3;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+ 

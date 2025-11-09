@@ -1,5 +1,4 @@
 import React from 'react';
-import '../css/modal.css'; // Aquí ponemos los estilos tipo newspaper
 
 export default function TeamModal({ open, onClose }) {
   if (!open) return null;

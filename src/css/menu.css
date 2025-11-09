@@ -1,0 +1,28 @@
+#menu {
+   display: none;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 70px;
+   background: #3d3d3d;
+   justify-content: space-around;
+   align-items: center;
+   z-index: 2000;
+ }
+ 
+ #menu img {
+   width: 40px;
+ }
+ 
+ button {
+   background-color: transparent;
+   border: none;
+ }
+ 
+ @media (max-width: 700px) {
+   #menu {
+     display: flex;
+   }
+ }
+ 

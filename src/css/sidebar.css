@@ -46,3 +46,20 @@
    margin-top: 20px;
  }
  
+ #sidebar {
+  padding: 20px;
+  max-width: 25%;
+}
+
+#sidebar > img {
+  width: 100%;
+}
+
+#rss {
+  width: 70%;
+  margin: 20px auto;
+}
+
+#rss > a > img {
+  width: 50px;
+}

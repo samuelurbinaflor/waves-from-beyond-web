@@ -1,4 +1,11 @@
 import React, { useState, useEffect } from "react";
+import './css/base.css';
+import './css/layout.css';
+import './css/sidebar.css';
+import './css/devlogs.css';
+import './css/carousel.css';
+import './css/menu.css';
+import './css/responsive.css';
 
 import WFB from "./components/WFB.jsx";
 import DevLogs from "./components/DevLogs.jsx";

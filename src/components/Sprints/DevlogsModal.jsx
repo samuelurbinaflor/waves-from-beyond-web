@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import '../../css/modal.css'
 import FirstSprint from './FirstSprint.jsx'
 import SecondSprint from './SecondSprint.jsx'
 
