@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=IM+Fell+English:ital@0;1&display=swap');
+
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(255, 255, 255, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-white-soft);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-black-soft);
+  --color-background-soft: var(--vt-c-black-soft);
+  --color-background-mute: var(--vt-c-black-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  background-color: var();
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b9b9b9; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+#body {
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  text-align: justify;
+  overflow: hidden;
+  font-family: "IM Fell English", serif;
+}
+
+a {
+  display: inline-block;
+  font-size: large;
+}
+
+a img {
+  display: block;
+  cursor: pointer;
+}
+/* === MAIN ===  */
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #222222;
+  flex: 6;
+  padding: 50px 80px;
+  gap: 50px;
+}
+
+#menu {
+  display: none;
+  z-index: 2000;
+  position: fixed;
+  bottom: 0;
+  background: #3d3d3d;
+  left: 0;
+  right: 0;
+  justify-content: space-around;
+  height: 70px;
+}
+#menu img {
+  width: 40px;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+
+
+/* === EXTRA === */
+#extra {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* === DEVLOGS === */
+#devlogs {
+  background-color: white;
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  color: #181818;
+}
+
+#devlogs-preview {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;            /* ya tenías el cursor */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* animación suave */
+}
+
+#devlogs-preview:hover {
+  transform: scale(1.05);     /* pequeño zoom */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* sombra para resaltar */
+}
+
+
+
+@media (max-width: 1379px) {
+  #main {
+    padding: 30px 50px;
+  }
+}
+
+
+@media (max-width: 1255px) {
+  #main {
+    padding: 30px 50px;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  #extra {
+    min-width: fit-content;
+  }
+
+  #desc {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1160px) {
+  #sidebar {
+    padding: 20px;
+    max-width: 25%;
+  }
+
+  #sidebar>img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #main {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  #logowfb {
+    margin: auto;
+    max-width: 100%;
+  }
+ 
+  #aboutus>h1 {
+    display: none;
+  }
+
+}
+
+
+/* === MENU DISPLAY === */
+@media (max-width: 700px) {
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  .hidden {
+    display: none !important;
+  }
+  
+  #main, #sidebar {
+    overflow-y: scroll;
+    padding-bottom: 70px !important; 
+  }
+  #menu {
+    display: flex;
+  }
+
+  #wfb {
+    gap: 10px;
+  }
+  
+  #devlogs {
+    max-height: none;
+    height: 90vh;
+  }
+
+  .carousel {
+    display: none;
+  }
+
+  .carousel-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    background-color: #222222;
+  }
+
+  .carousel-mobile img {
+    width: 100%;
+    height: auto;
+    min-height: none;
+    max-height: none;
+    border-radius: 8px; /* si lo quieres más bonito */
+  }
+
+  #sidebar {
+    width: 100%;
+    max-width: none;
+    padding: 30px 50px;
+  }
+  #sidebar img {
+    width: 50%;
+  }
+
+  #rss {
+    width: 70%;
+    margin: 20px auto;
+  }
+  #rss > a>img {
+    max-width: none;
+    width: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  #main, #sidebar {
+    padding: 30px;
+  }
+
+  #wfb {
+    font-size: 20px;
+  }
+
+  #logowfb {
+    max-width: 100%;
+  }
+
+  #sidebar img {
+    width: 80%;
+  }
+  #rss {
+    width: 100%;
+  }
+
+ 
+}
+

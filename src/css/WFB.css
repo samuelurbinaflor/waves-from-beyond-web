@@ -1,0 +1,27 @@
+/* === WAVES FROM BEYOND SECTION === */
+#wfb {
+   display: flex;
+   flex-direction: column;
+   flex: 4;
+   font-size: 24px;
+   gap: 50px;
+ }
+ 
+ #wfbimgs {
+   display: flex;
+ }
+ 
+ #logowfb {
+   flex: 0 0 auto;
+   max-width: 80%;
+   margin: 20px auto 0;
+   height: auto;
+ }
+ 
+ #desc {
+   flex: 1 1 auto;
+   min-height: 0;
+   overflow-y: auto;
+   padding-right: 20px;
+ }
+ 

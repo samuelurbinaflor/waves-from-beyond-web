@@ -1,0 +1,106 @@
+
+/* === CAROUSEL === */
+#app {
+   background-color: rgb(255, 255, 255);
+   width: 100%;
+   padding: 0;
+   height: 35%;
+ }
+ 
+ .carousel {
+   margin: 0;
+   height: 100%;
+ }
+ 
+ .carousel>img {
+   height: 100%;
+   width: 100%;
+   object-position: center;
+   margin: 0;
+   object-fit: cover;
+ }
+ .carousel-mobile {
+   display: none;
+ }
+ 
+
+ /* Fondo borroso */
+.carousel-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+/* Ventana modal centrada */
+.carousel-modal-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-height: 85vh;
+  background-color: #fff;
+  border-radius: 12px;
+  z-index: 1001;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imagen grande */
+.carousel-modal-window img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Controles */
+.carousel-modal-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0.5rem 0;
+}
+
+.carousel-modal-controls button {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.carousel-modal-controls button:hover {
+  background-color: #c00;
+}
+
+/* Cerrar */
+.carousel-modal-close {
+  margin-bottom: 0.5rem;
+  background-color: #c00;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.carousel-modal-close:hover {
+  background-color: #900;
+}
+
+
