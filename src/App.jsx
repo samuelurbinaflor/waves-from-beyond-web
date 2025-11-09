@@ -37,6 +37,8 @@ function App() {
       {!isMobile ? (
         // Desktop layout
         <>
+          <Sidebar />
+
           <div id="main">
             <WFB />
             <div id="extra">
@@ -46,7 +48,6 @@ function App() {
               <Carousel />
             </div>
           </div>
-          <Sidebar />
         </>
       ) : (
         // Mobile layout

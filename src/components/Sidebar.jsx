@@ -46,7 +46,7 @@ export default function Sidebar() {
               <a href="https://www.instagram.com/ettudioPitijopo/"><img src={instagram} alt="" /></a>
               <a href="https://www.tiktok.com/@ettudioPitijopo"><img src={tiktok} alt="" /></a>
               <a href="https://x.com/ettudioPitijopo"><img src={xIcon} alt="" /></a>
-              <a href="https://itch.io/dashboard"><img src={itch} alt="" /></a>
+              <a href="https://ettudiopitijopo.itch.io/"><img src={itch} alt="" /></a>
             </div>
           </div>
         </div>

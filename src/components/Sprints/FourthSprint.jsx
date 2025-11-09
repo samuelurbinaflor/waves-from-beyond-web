@@ -1,5 +1,5 @@
 import React from "react";
-import itchiologo from "../../assets/icons/Itch Io.png";
+import itch from "../../assets/icons/Itch Io.png";
 
 export default function FourthSprint() {
   return (
@@ -50,7 +50,9 @@ export default function FourthSprint() {
 
       <footer>
         <p>Êttudio Pitijopo</p>
-        <img src={itchiologo} alt="" />
+        <a href="https://ettudiopitijopo.itch.io/">
+          <img src={itch} alt="" />
+        </a>
       </footer>
     </div>
   );
