@@ -25,8 +25,7 @@
    .team-modal-window { width: 60% !important;}
  }
  
- @media (max-width: 700px) {
-   ::-webkit-scrollbar { display: none; }
+ @media (max-width: 700px) {   ::-webkit-scrollbar { display: none; }
    .hidden { display: none !important; }
    
    #mobile-display {overflow-y: scroll;}
@@ -35,18 +34,19 @@
     #teampage {margin-bottom: 70px;}
 
    #menu { display: flex; }
-   #wfb { gap: 10px; }
+   #wfb { gap: 10px; font-size: 20px !important;}
    #logowfb { min-width: 100% ; max-width: none; margin: 0 auto !important;}
    #devlogs { max-height: none; height: 90vh; }
  
    .carousel { display: none; }
    .carousel-mobile { display: flex; flex-direction: column; gap: 10px; background-color: #222; }
- 
-   #sidebar { width: 100%; max-width: none; padding: 30px 50px 0 !important; }
+   #newspaper .intro {font-size: 16px !important;}
+   #newspaper p {padding: 0;}
+   #sidebar { width: 100%; max-width: none; padding: 30px 50px 0 !important; height: 92vh;}
    #sidebar img { width: 50%; }
    #sidebar > div { height: fit-content;}
    #sidebar > div > div {margin-bottom: 10px;}
-
+   .intro {padding: 0 0 20px !important;}
    #rss { width: 70%; margin: 20px auto; }
    #rss > a > img { width: 50px; }
  }

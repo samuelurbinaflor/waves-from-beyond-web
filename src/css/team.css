@@ -20,7 +20,15 @@ article p {
    padding: 10px;
    
 }
-
+article a {
+   font-size: medium;
+}
+article span {
+   display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: space-between;
+}
 footer {
    display: flex;
    align-items: center;

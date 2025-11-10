@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/team.css";
 import itch from "../assets/icons/Itch Io.png";
+import instagram from "../assets/icons/Instagram.png";
 
 export default function TeamModal({ open, onClose }) {
   if (!open) return null;
@@ -68,12 +69,15 @@ export default function TeamModal({ open, onClose }) {
           </article>
 
           <article>
-            <h2>Ángela Amate Jiménez</h2>
+            <h2>Ángela Amate Jiménez </h2>
             <h3>2D Art & Animation</h3>
             <p>
-              Ángela creates stunning 2D assets and illustrations, adding
+              Ángela creates stunning 2D assets, illustrations, and animations adding
               personality and style to our characters and environments.
             </p>
+            <a href="https://www.instagram.com/athenezs.art?utm_source=qr&igsh=ZDd4ZnVzanR1ejBy">
+              Follow me on IG!
+            </a>
           </article>
 
           <article>
